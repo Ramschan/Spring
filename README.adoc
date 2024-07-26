@@ -10,7 +10,7 @@ service with Spring.
 == What You Will Build
 
 You will build a service that will accept HTTP GET requests at
-`http://localhost:8080/greeting`.
+`http://localhost:8090/greeting`.
 
 It will respond with a JSON representation of a greeting, as the following listing shows:
 
@@ -27,7 +27,7 @@ the following listing shows:
 ====
 [source,text]
 ----
-http://localhost:8080/greeting?name=User
+http://localhost:8090/greeting?name=User
 ----
 ====
 
@@ -177,7 +177,7 @@ Logging output is displayed. The service should be up and running within a few s
 
 == Test the Service
 
-Now that the service is up, visit `http://localhost:8080/greeting`, where you should see:
+Now that the service is up, visit `http://localhost:8090/greeting`, where you should see:
 
 ====
 [source,json]
@@ -187,7 +187,7 @@ Now that the service is up, visit `http://localhost:8080/greeting`, where you sh
 ====
 
 Provide a `name` query string parameter by visiting
-`http://localhost:8080/greeting?name=User`. Notice how the value of the `content`
+`http://localhost:8090/greeting?name=User`. Notice how the value of the `content`
 attribute changes from `Hello, World!` to `Hello, User!`, as the following listing shows:
 
 ====
